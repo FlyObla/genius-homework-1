@@ -1,3 +1,164 @@
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v47-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-v47-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v47-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+
 :root {
-  --color: ;
+  --color-brand-dark: #011c44;
+  --color-brand-light: #2b7fff;
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+  --color-secondary-grey: #4a4a4a;
+  --color-secondary-light-grey: #747272;
+}
+
+/* Base */
+body {
+  color: var(--color-brand-dark);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* link */
+
+.link {
+  color: var(--color-brand-dark);
+  line-height: 1.171;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-brand-light);
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero-title {
+  color: var(--color-brand-light);
+  font-family: "Play", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+}
+
+.hero-title-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.171;
+}
+
+.action-text {
+  color: var(--color-secondary-grey);
+  font-size: 12px;
+  line-height: 1.171;
+}
+
+/* Button */
+.button {
+  color: var(--color-primary);
+  font-weight: 600;
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: var(--color-primary);
+}
+
+/*  section titles */
+.section-title {
+  color: var(--color-brand-dark);
+  font-family: "play", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.157;
+}
+
+.section-title .accent {
+  color: var(--color-brand-light);
+}
+
+/* About section */
+.about-text {
+  font-size: 22px;
+  line-height: 1.727;
+}
+
+.about-text .brand {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+  line-height: 1.727;
+}
+
+/* Adventages section */
+.advantages-text {
+  color: var(--color-secondary);
+  line-height: 1.333;
+}
+
+/* Procedure section */
+.procedure-text {
+  font-size: 22px;
+  line-height: 1.181;
+}
+
+/* Footer */
+.footer-link {
+  font-size: 16px;
+  line-height: 1.171;
+  text-decoration: none;
+}
+
+.address-link {
+  font-size: 16px;
+  line-height: 1.171;
+  text-decoration: none;
+}
+
+.address-copyright {
+  color: var(--color-secondary-light-grey);
+  font-size: 13px;
+  line-height: 1.171;
 }
